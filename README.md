@@ -1,4 +1,4 @@
-# Ejemplo 02: API documentada con OpenAPI
+# Ejemplo 03: DRF
 
 Aplicación Django con una API de actividades e inscripciones consumida desde React. El contrato ejecutable y la documentación OpenAPI se generan con Django REST Framework y drf-spectacular.
 

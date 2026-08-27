@@ -5,6 +5,4 @@ from . import views
 
 app_name = "activities"
 
-urlpatterns = [
-    path("", views.activity_list, name="list"),
-]
+urlpatterns = []

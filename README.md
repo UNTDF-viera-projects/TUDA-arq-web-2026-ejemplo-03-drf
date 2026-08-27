@@ -1,6 +1,6 @@
 # Ejemplo 02: API documentada con OpenAPI
 
-Aplicación Django con una API de actividades e inscripciones consumida desde React. El contrato ejecutable y la documentación OpenAPI se generan con Django Ninja.
+Aplicación Django con una API de actividades e inscripciones consumida desde React. El contrato ejecutable y la documentación OpenAPI se generan con Django REST Framework y drf-spectacular.
 
 El repositorio comienza con dos aplicaciones independientes:
 

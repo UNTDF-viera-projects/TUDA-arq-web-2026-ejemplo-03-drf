@@ -14,6 +14,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "drf_spectacular",
     "activities",
 ]
 
@@ -62,3 +64,19 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "API de actividades e inscripciones",
+    "DESCRIPTION": (
+        "Primera versión funcional de la API de la Actividad 1. "
+        "Las operaciones bajo /me usan el header X-Participant-ID como "
+        "identidad controlada de demostración; no implementan autenticación real."
+    ),
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+}

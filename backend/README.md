@@ -1,6 +1,6 @@
 # Backend Django y API OpenAPI
 
-Aplicación Django con persistencia SQLite. La ruta `/` conserva la vista HTML clásica y `/api/v1` expone la API documentada con Django Ninja.
+Aplicación Django con persistencia SQLite. La ruta `/` conserva la vista HTML clásica y `/api/v1` expone la API documentada con Django REST Framework y drf-spectacular.
 
 ## Requisitos
 
@@ -65,8 +65,9 @@ python manage.py seed_activities
 ## Estructura relevante
 
 - `activities/models.py`: modelos `Activity`, `Participant` y `Enrollment`.
-- `activities/views.py`: vista clásica, endpoints, esquemas y metadatos OpenAPI.
-- `activities/representations.py`: representaciones JSON públicas.
+- `activities/views.py`: vista clásica, viewsets y endpoints.
+- `activities/api_urls.py`: enrutamiento de la API.
+- `activities/serializers.py`: representaciones JSON públicas.
 - `activities/templates/activities/activity_list.html`: documento HTML producido por Django.
 - `activities/management/commands/seed_activities.py`: datos reproducibles.
 
